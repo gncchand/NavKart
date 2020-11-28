@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="73657" started-at="2020-11-28T22:18:36 IST" finished-at="2020-11-28T22:19:49 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="73657" started-at="2020-11-28T22:18:36 IST" finished-at="2020-11-28T22:19:49 IST">
+      <class name="tests.Shopping_Chrome_Test">
+        <test-method status="PASS" signature="test_cart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Shopping_Chrome_Test@57e1b0c]" name="test_cart" duration-ms="69229" started-at="2020-11-28T22:18:38 IST" data-provider="getexcel_data" finished-at="2020-11-28T22:19:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Printed Chiffon Dress - My Store]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$16.40]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Printed Chiffon Dress]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[$16.40]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_cart -->
+        <test-method status="PASS" signature="flushrep()[pri:0, instance:tests.Shopping_Chrome_Test@57e1b0c]" name="flushrep" is-config="true" duration-ms="1976" started-at="2020-11-28T22:19:47 IST" finished-at="2020-11-28T22:19:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushrep -->
+      </class> <!-- tests.Shopping_Chrome_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="101855" started-at="2020-11-28T22:19:49 IST" finished-at="2020-11-28T22:21:31 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="101855" started-at="2020-11-28T22:19:49 IST" finished-at="2020-11-28T22:21:31 IST">
+      <class name="tests.Shopping_Firefox_Test">
+        <test-method status="PASS" signature="test_cart_firefox(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Shopping_Firefox_Test@3234e239]" name="test_cart_firefox" duration-ms="101623" started-at="2020-11-28T22:19:50 IST" data-provider="getexcel_data" finished-at="2020-11-28T22:21:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blouse - My Store]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$27.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Blouse]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[$54.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_cart_firefox -->
+        <test-method status="PASS" signature="flushrep()[pri:0, instance:tests.Shopping_Firefox_Test@3234e239]" name="flushrep" is-config="true" duration-ms="74" started-at="2020-11-28T22:21:31 IST" finished-at="2020-11-28T22:21:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushrep -->
+      </class> <!-- tests.Shopping_Firefox_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
+  <suite name="MultipleSuite" duration-ms="0" started-at="2020-11-28T22:21:32 IST" finished-at="2020-11-28T22:21:32 IST">
+    <groups>
+    </groups>
+  </suite> <!-- MultipleSuite -->
+</testng-results>
