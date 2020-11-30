@@ -4,6 +4,7 @@
     <test name="Test">
     <classes>
       <class name="tests.Shopping_Chrome_Test"/>
+      <class name="tests.Shopping_Firefox_Test"/>    
     </classes>
   </test> 
 </suite>

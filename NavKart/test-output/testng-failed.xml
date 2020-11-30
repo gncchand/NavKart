@@ -5,8 +5,10 @@
     <classes>
       <class name="tests.Shopping_Firefox_Test">
         <methods>
-          <include name="test_cart_firefox" invocation-numbers="0"/>
-          <include name="flushrep"/>
+          <include name="getResult"/>
+          <include name="validate_cart_quantity" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- tests.Shopping_Firefox_Test -->
     </classes>
