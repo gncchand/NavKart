@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 30 17:51:31 IST 2020</td>
+<td>Started on:</td><td>Thu Dec 03 23:20:21 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>161 seconds (161935 ms)</td>
+<tr><td>Total time:</td><td>232 seconds (232882 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.Shopping_Firefox_Test.validate_cart_quantity()'><b>validate_cart_quantity</b><br>Test class: tests.Shopping_Firefox_Test<br>Parameters: Blouse - My Store, $27.00, 2.0, Blouse, $54.00</td>
-<td><div><pre>java.lang.AssertionError: expected [2.0] but found [2]
-	at tests.Shopping_Firefox_Test.validate_cart_quantity(Shopping_Firefox_Test.java:71)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [2.0] but found [2]
+	at tests.Shopping_Firefox_Test.validate_cart_quantity(Shopping_Firefox_Test.java:81)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173440626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace173440626'><pre>java.lang.AssertionError: expected [2.0] but found [2]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at tests.Shopping_Firefox_Test.validate_cart_quantity(Shopping_Firefox_Test.java:71)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace456314134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456314134'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [2.0] but found [2]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at tests.Shopping_Firefox_Test.validate_cart_quantity(Shopping_Firefox_Test.java:81)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -145,17 +143,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='tests.Shopping_Chrome_Test.validate_cart_total()'><b>validate_cart_total</b><br>Test class: tests.Shopping_Chrome_Test<br>Parameters: Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>tests.Shopping_Chrome_Test@4493d195</td></tr>
 <tr>
 <td title='tests.Shopping_Firefox_Test.validate_cart_total()'><b>validate_cart_total</b><br>Test class: tests.Shopping_Firefox_Test<br>Parameters: Blouse - My Store, $27.00, 2.0, Blouse, $54.00</td>
 <td></td>
-<td>6</td>
+<td>8</td>
 <td>tests.Shopping_Firefox_Test@2781e022</td></tr>
 <tr>
 <td title='tests.Shopping_Chrome_Test.validate_dress_title()'><b>validate_dress_title</b><br>Test class: tests.Shopping_Chrome_Test<br>Parameters: Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40</td>
 <td></td>
-<td>6</td>
+<td>8</td>
 <td>tests.Shopping_Chrome_Test@4493d195</td></tr>
 <tr>
 <td title='tests.Shopping_Firefox_Test.validate_dress_title()'><b>validate_dress_title</b><br>Test class: tests.Shopping_Firefox_Test<br>Parameters: Blouse - My Store, $27.00, 2.0, Blouse, $54.00</td>
@@ -165,12 +163,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='tests.Shopping_Chrome_Test.validate_price()'><b>validate_price</b><br>Test class: tests.Shopping_Chrome_Test<br>Parameters: Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40</td>
 <td></td>
-<td>50</td>
+<td>119</td>
 <td>tests.Shopping_Chrome_Test@4493d195</td></tr>
 <tr>
 <td title='tests.Shopping_Firefox_Test.validate_price()'><b>validate_price</b><br>Test class: tests.Shopping_Firefox_Test<br>Parameters: Blouse - My Store, $27.00, 2.0, Blouse, $54.00</td>
 <td></td>
-<td>67</td>
+<td>62</td>
 <td>tests.Shopping_Firefox_Test@2781e022</td></tr>
 <tr>
 <td title='tests.Shopping_Chrome_Test.validate_success_message()'><b>validate_success_message</b><br>Test class: tests.Shopping_Chrome_Test</td>

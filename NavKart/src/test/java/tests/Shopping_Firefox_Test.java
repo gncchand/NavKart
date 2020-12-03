@@ -6,9 +6,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import excel.Shopping_Data;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -21,6 +21,7 @@ public class Shopping_Firefox_Test extends ExtentReportTest {
 	 
 	  @Test(dataProvider = "getexcel_data", priority = 1)  
 	  public void validate_price(String title, String price, String quantity, String name, String total) throws Exception {
+		  SoftAssert sa=new SoftAssert();
 		  System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 		  WebDriverManager.firefoxdriver().setup();
 		  Thread.sleep(3000);
@@ -41,13 +42,16 @@ public class Shopping_Firefox_Test extends ExtentReportTest {
 		  WebElement product=  driver.findElement(By.xpath("(//*[contains(text(),'"+name+"')])[3]"));
 		  product.click();
 
-		  Assert.assertEquals(ccp.price.getText(),price);
+		  sa.assertEquals(ccp.price.getText(),price);
+		  sa.assertAll();
 		  Thread.sleep(3000);	
 	  }
 	  @Test(dataProvider = "getexcel_data", priority = 2)  
 	  public void validate_dress_title(String title, String price, String quantity, String name, String total) throws InterruptedException
 	  {
-		  Assert.assertEquals(driver.getTitle(),title);
+		  SoftAssert sa=new SoftAssert();
+		  sa.assertEquals(driver.getTitle(),title);
+		  sa.assertAll();
 		  driver.findElement(By.xpath("//i[@class='icon-plus']")).click();
 		  Thread.sleep(3000);
 		  ccp.checkout.click();
@@ -56,33 +60,42 @@ public class Shopping_Firefox_Test extends ExtentReportTest {
 	  @Test(priority = 3)
 	  public void validate_success_message() throws InterruptedException
 	  {
-		  Assert.assertEquals(ccp.success_msg.getText(),"Product successfully added to your shopping cart");
+		  SoftAssert sa=new SoftAssert();
+		  sa.assertEquals(ccp.success_msg.getText(),"Product successfully added to your shopping cart");
+		  sa.assertAll();
 		  Thread.sleep(3000);	
 	  }  
 	  @Test(dataProvider = "getexcel_data", priority = 4)  
 	  public void validate_cart_price(String title, String price, String quantity, String name, String total) throws InterruptedException
 	  {
-		 Assert.assertEquals(ccp.cart_price.getText(),total);
+		  SoftAssert sa=new SoftAssert();
+		 sa.assertEquals(ccp.cart_price.getText(),total);
+		 sa.assertAll();
 		 Thread.sleep(3000);	
 	  }  
 	  @Test(dataProvider = "getexcel_data", priority = 5)  
 	  public void validate_cart_quantity(String title, String price, String quantity, String name, String total) throws Exception
 	  {
-		  Assert.assertEquals(ccp.cart_quantity.getText(),quantity);
+		  SoftAssert sa=new SoftAssert();
+		  sa.assertEquals(ccp.cart_quantity.getText(),quantity);
+		  sa.assertAll();
 		  Thread.sleep(3000);	
 	  }  
 	  @Test(dataProvider = "getexcel_data", priority = 6)  
 	  public void validate_cart_total(String title, String price, String quantity, String name, String total) throws Exception
 	  {  
-		  Assert.assertEquals(ccp.cart_total.getText(),total);
+		  SoftAssert sa=new SoftAssert();
+		  System.out.println("act..."+ccp.cart_total.getText()+"exp..."+total);
+		  sa.assertEquals(ccp.cart_total.getText(),total);
+		  sa.assertAll();
 		  Thread.sleep(3000);	
 		  ccp.click_cont_shoppin();
 		  driver.quit();	  	  
 	  }
-   @DataProvider 
-	 public String[][] getexcel_data() throws IOException
-	 {
-	   Shopping_Data excel=new Shopping_Data();
-	   return excel.get_data_from_excel("shopping_data.xlsx", "Firefox");
-	 }	 
+	  @DataProvider 
+	  public String[][] getexcel_data() throws IOException
+	  {
+		  Shopping_Data excel=new Shopping_Data();
+		  return excel.get_data_from_excel("shopping_data.xlsx", "Firefox");
+	  }	 
 }

@@ -11,6 +11,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
 import org.openqa.selenium.TakesScreenshot;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -27,7 +28,6 @@ public class ExtentReportTest
     public static ExtentReports extent;
     public static ExtentTest test;
     public static WebDriver driver;
-     
     @BeforeSuite
     public void setUp()
     {

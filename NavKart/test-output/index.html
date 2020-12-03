@@ -133,17 +133,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Chrome_Test" hash-for-method="validate_cart_total(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)">validate_cart_total(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Firefox_Test" hash-for-method="validate_cart_total(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)">validate_cart_total(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Firefox_Test" hash-for-method="validate_dress_title(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)">validate_dress_title(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Chrome_Test" hash-for-method="validate_cart_total(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)">validate_cart_total(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,7 +148,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Firefox_Test" hash-for-method="validate_price(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)">validate_price(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Firefox_Test" hash-for-method="validate_dress_title(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)">validate_dress_title(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -163,12 +158,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Chrome_Test" hash-for-method="validate_success_message">validate_success_message</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Firefox_Test" hash-for-method="validate_price(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)">validate_price(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Firefox_Test" hash-for-method="validate_success_message">validate_success_message</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.Shopping_Chrome_Test" hash-for-method="validate_success_message">validate_success_message</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -195,10 +195,11 @@
                   </a> <!-- validate_cart_quantity(Blouse - My Store, $27.00, 2.0, Blouse, $54.00) -->
                   <span class="method-name">validate_cart_quantity</span>
                   <span class="parameters">(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [2.0] but found [2]
-	at tests.Shopping_Firefox_Test.validate_cart_quantity(Shopping_Firefox_Test.java:71)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [2.0] but found [2]
+	at tests.Shopping_Firefox_Test.validate_cart_quantity(Shopping_Firefox_Test.java:81)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 33 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -362,48 +363,48 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validate_price')
-data.setCell(0, 2, 'tests.Shopping_Firefox_Test')
-data.setCell(0, 3, 67276);
+data.setCell(0, 2, 'tests.Shopping_Chrome_Test')
+data.setCell(0, 3, 119592);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validate_price')
-data.setCell(1, 2, 'tests.Shopping_Chrome_Test')
-data.setCell(1, 3, 50430);
+data.setCell(1, 2, 'tests.Shopping_Firefox_Test')
+data.setCell(1, 3, 62080);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validate_dress_title')
+data.setCell(2, 1, 'validate_cart_total')
 data.setCell(2, 2, 'tests.Shopping_Firefox_Test')
-data.setCell(2, 3, 6731);
+data.setCell(2, 3, 8705);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validate_dress_title')
 data.setCell(3, 2, 'tests.Shopping_Chrome_Test')
-data.setCell(3, 3, 6399);
+data.setCell(3, 3, 8102);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validate_cart_total')
+data.setCell(4, 1, 'validate_dress_title')
 data.setCell(4, 2, 'tests.Shopping_Firefox_Test')
-data.setCell(4, 3, 6263);
+data.setCell(4, 3, 6776);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'validate_cart_total')
 data.setCell(5, 2, 'tests.Shopping_Chrome_Test')
-data.setCell(5, 3, 4270);
+data.setCell(5, 3, 5122);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validate_success_message')
+data.setCell(6, 1, 'validate_cart_quantity')
 data.setCell(6, 2, 'tests.Shopping_Chrome_Test')
-data.setCell(6, 3, 3223);
+data.setCell(6, 3, 3109);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validate_cart_price')
+data.setCell(7, 1, 'validate_success_message')
 data.setCell(7, 2, 'tests.Shopping_Chrome_Test')
-data.setCell(7, 3, 3146);
+data.setCell(7, 3, 3075);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validate_cart_quantity')
+data.setCell(8, 1, 'validate_cart_price')
 data.setCell(8, 2, 'tests.Shopping_Chrome_Test')
-data.setCell(8, 3, 3142);
+data.setCell(8, 3, 3074);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'validate_success_message')
+data.setCell(9, 1, 'validate_cart_price')
 data.setCell(9, 2, 'tests.Shopping_Firefox_Test')
-data.setCell(9, 3, 3108);
+data.setCell(9, 3, 3064);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'validate_cart_price')
+data.setCell(10, 1, 'validate_success_message')
 data.setCell(10, 2, 'tests.Shopping_Firefox_Test')
-data.setCell(10, 3, 3067);
+data.setCell(10, 3, 3038);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'validate_cart_quantity')
 data.setCell(11, 2, 'tests.Shopping_Firefox_Test')
@@ -412,7 +413,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -454,111 +455,111 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">validate_price(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)</span>
-                <span class="method-start">3579 ms</span>
+                <span class="method-start">5161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_price status=SUCCESS method=Shopping_Chrome_Test.validate_price(java.lang....)</span>
-                <span class="method-start">54009 ms</span>
+                <span class="method-start">124753 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_dress_title(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)</span>
-                <span class="method-start">54154 ms</span>
+                <span class="method-start">125423 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_dress_title status=SUCCESS method=Shopping_Chrome_Test.validate_dress_titl...)</span>
-                <span class="method-start">60553 ms</span>
+                <span class="method-start">133525 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_success_message</span>
-                <span class="method-start">60553 ms</span>
+                <span class="method-start">133525 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_success_message status=SUCCESS method=Shopping_Chrome_Test.validate_succes...)</span>
-                <span class="method-start">63776 ms</span>
+                <span class="method-start">136600 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_cart_price(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)</span>
-                <span class="method-start">63901 ms</span>
+                <span class="method-start">136807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_cart_price status=SUCCESS method=Shopping_Chrome_Test.validate_cart_price(...)</span>
-                <span class="method-start">67047 ms</span>
+                <span class="method-start">139881 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_cart_quantity(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)</span>
-                <span class="method-start">67156 ms</span>
+                <span class="method-start">140028 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_cart_quantity status=SUCCESS method=Shopping_Chrome_Test.validate_cart_qua...)</span>
-                <span class="method-start">70298 ms</span>
+                <span class="method-start">143137 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_cart_total(Printed Chiffon Dress - My Store, $16.40, 1, Printed Chiffon Dress, $16.40)</span>
-                <span class="method-start">70407 ms</span>
+                <span class="method-start">143200 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_cart_total status=SUCCESS method=Shopping_Chrome_Test.validate_cart_total(...)</span>
-                <span class="method-start">74677 ms</span>
+                <span class="method-start">148322 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Shopping_Firefox_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validate_price(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</span>
-                <span class="method-start">74755 ms</span>
+                <span class="method-start">148391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_price status=SUCCESS method=Shopping_Firefox_Test.validate_price(java.lang...)</span>
-                <span class="method-start">142031 ms</span>
+                <span class="method-start">210471 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_dress_title(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</span>
-                <span class="method-start">142132 ms</span>
+                <span class="method-start">210594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_dress_title status=SUCCESS method=Shopping_Firefox_Test.validate_dress_tit...)</span>
-                <span class="method-start">148863 ms</span>
+                <span class="method-start">217370 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_success_message</span>
-                <span class="method-start">148863 ms</span>
+                <span class="method-start">217370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_success_message status=SUCCESS method=Shopping_Firefox_Test.validate_succe...)</span>
-                <span class="method-start">151971 ms</span>
+                <span class="method-start">220408 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_cart_price(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</span>
-                <span class="method-start">152088 ms</span>
+                <span class="method-start">220517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_cart_price status=SUCCESS method=Shopping_Firefox_Test.validate_cart_price...)</span>
-                <span class="method-start">155155 ms</span>
+                <span class="method-start">223581 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validate_cart_quantity(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</span>
-                <span class="method-start">155240 ms</span>
+                <span class="method-start">223650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_cart_quantity status=FAILURE method=Shopping_Firefox_Test.validate_cart_qu...)</span>
-                <span class="method-start">155418 ms</span>
+                <span class="method-start">223751 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validate_cart_total(Blouse - My Store, $27.00, 2.0, Blouse, $54.00)</span>
-                <span class="method-start">156875 ms</span>
+                <span class="method-start">224945 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validate_cart_total status=SUCCESS method=Shopping_Firefox_Test.validate_cart_total...)</span>
-                <span class="method-start">163138 ms</span>
+                <span class="method-start">233650 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Shopping_Chrome_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">163451 ms</span>
+                <span class="method-start">234273 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
