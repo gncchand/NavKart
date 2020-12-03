@@ -1,9 +1,10 @@
 package tests;
 
 public class Solution {
-public static void main(String[] args) {
+public static void main(String[] args) 
+{
 		System.out.println("Answer : "+solution(333,3));
-	}
+}
 
 public static int solution(int A,int B)
 {

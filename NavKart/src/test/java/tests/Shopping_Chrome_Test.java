@@ -15,11 +15,9 @@ import pages.Checkout_Page;
 import pages.Shopping_Page;
 
 public class Shopping_Chrome_Test extends ExtentReportTest {
-	
 	public Shopping_Page scp;
 	public Checkout_Page ccp;
 
-	  
   @Test(dataProvider = "getexcel_data", priority = 1)  
   public void validate_price(String title, String price, String quantity, String name, String total) throws Exception 
   {

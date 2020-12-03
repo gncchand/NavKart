@@ -15,7 +15,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.Checkout_Page;
 import pages.Shopping_Page;
 
-public class Shopping_Firefox_Test extends ExtentReportTest {
+public class Shopping_Firefox_Test extends ExtentReportTest 
+{
 	public Shopping_Page scp;
 	public Checkout_Page ccp;
 	 
